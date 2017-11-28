@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mysql/mysql.iml" filepath="$PROJECT_DIR$/mysql/mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scheduldTest/scheduldTest.iml" filepath="$PROJECT_DIR$/scheduldTest/scheduldTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootParent.iml" filepath="$PROJECT_DIR$/springBootParent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" filepath="$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" />
+    </modules>
+  </component>
+</project>
