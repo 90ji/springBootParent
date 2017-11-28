@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="encrypt" />
         <module name="mysql" />
         <module name="scheduldTest" />
         <module name="springBootStarterHello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="encrypt" target="1.8" />
       <module name="mysql" target="1.8" />
       <module name="scheduldTest" target="1.8" />
       <module name="springBootParent" target="1.8" />

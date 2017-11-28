@@ -70,5 +70,6 @@
         <module>scheduldTest</module>
         <module>springBootStarterHello</module>
         <module>mysql</module>
+        <module>encrypt</module>
     </modules>
 </project>
