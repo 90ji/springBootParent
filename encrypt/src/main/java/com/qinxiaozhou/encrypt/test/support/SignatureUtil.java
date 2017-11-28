@@ -6,8 +6,6 @@
 package com.qinxiaozhou.encrypt.test.support;
 
 
-import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
-
 import java.io.UnsupportedEncodingException;
 import java.security.*;
 import java.security.cert.Certificate;

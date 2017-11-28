@@ -1,9 +1,9 @@
 package com.qinxiaozhou.encrypt.test;
 
 
+import com.qinxiaozhou.encrypt.test.support.Base64;
 import com.qinxiaozhou.encrypt.test.support.KeyType;
 import com.qinxiaozhou.encrypt.test.support.SignatureUtil;
-import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
 import java.security.*;
 
