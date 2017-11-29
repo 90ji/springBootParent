@@ -72,5 +72,6 @@
         <module>encrypt</module>
         <module>redis</module>
         <module>email</module>
+        <module>cache</module>
     </modules>
 </project>
