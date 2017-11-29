@@ -26,9 +26,8 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <dependency>
@@ -71,5 +70,7 @@
         <module>springBootStarterHello</module>
         <module>mysql</module>
         <module>encrypt</module>
+        <module>redis</module>
+        <module>email</module>
     </modules>
 </project>
