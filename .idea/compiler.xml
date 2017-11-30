@@ -12,6 +12,7 @@
         <module name="mysql" />
         <module name="redis" />
         <module name="scheduldTest" />
+        <module name="security" />
         <module name="springBootStarterHello" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="mysql" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="scheduldTest" target="1.8" />
+      <module name="security" target="1.8" />
       <module name="springBootParent" target="1.8" />
       <module name="springBootStarterHello" target="1.8" />
     </bytecodeTargetLevel>
