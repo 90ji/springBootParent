@@ -24,5 +24,20 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.javatuples</groupId>
+        <artifactId>javatuples</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache</groupId>
+        <artifactId>csv</artifactId>
+        <version>1.2</version>
+        <systemPath>${project.basedir}/lib/commons-csv-20070730.jar</systemPath>
+    </dependency>
 </dependencies>
 </project>
