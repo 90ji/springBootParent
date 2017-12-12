@@ -9,6 +9,7 @@
         <module name="cache" />
         <module name="email" />
         <module name="encrypt" />
+        <module name="javaNetworkProgramming" />
         <module name="mysql" />
         <module name="redis" />
         <module name="scheduldTest" />
@@ -20,6 +21,7 @@
       <module name="cache" target="1.8" />
       <module name="email" target="1.8" />
       <module name="encrypt" target="1.8" />
+      <module name="javaNetworkProgramming" target="1.8" />
       <module name="mysql" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="scheduldTest" target="1.8" />
