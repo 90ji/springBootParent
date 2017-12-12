@@ -82,5 +82,6 @@
         <module>email</module>
         <module>cache</module>
         <module>security</module>
+        <module>reptile</module>
     </modules>
 </project>
