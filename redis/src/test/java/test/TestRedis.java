@@ -11,6 +11,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import redis.study.redisInAction.Chapter05;
 
 /**
  * Create by qxz on 2017/11/29
@@ -51,5 +52,6 @@ public class TestRedis {
         Assert.assertEquals(true,redisTemplate.hasKey("User:zzp"));
         Assert.assertEquals(true,redisTemplate.hasKey("User:zzq"));
     }
+
 
 }
