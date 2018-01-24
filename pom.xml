@@ -84,5 +84,6 @@
         <module>security</module>
         <module>javaNetworkProgramming</module>
         <module>reptile</module>
+        <module>springBootTestWeb</module>
     </modules>
 </project>

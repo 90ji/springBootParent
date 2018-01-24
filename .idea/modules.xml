@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootParent.iml" filepath="$PROJECT_DIR$/springBootParent.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" filepath="$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootTestWeb/springBootTestWeb.iml" filepath="$PROJECT_DIR$/springBootTestWeb/springBootTestWeb.iml" />
     </modules>
   </component>
 </project>

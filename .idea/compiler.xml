@@ -16,6 +16,7 @@
         <module name="scheduldTest" />
         <module name="security" />
         <module name="springBootStarterHello" />
+        <module name="springBootTestWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="security" target="1.8" />
       <module name="springBootParent" target="1.8" />
       <module name="springBootStarterHello" target="1.8" />
+      <module name="springBootTestWeb" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
