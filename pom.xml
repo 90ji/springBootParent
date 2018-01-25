@@ -87,5 +87,6 @@
         <module>springBootTestWeb</module>
         <module>aop</module>
         <module>helloWorld</module>
+        <module>myPOI</module>
     </modules>
 </project>

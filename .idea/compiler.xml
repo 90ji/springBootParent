@@ -12,6 +12,7 @@
         <module name="encrypt" />
         <module name="helloWorld" />
         <module name="javaNetworkProgramming" />
+        <module name="myPOI" />
         <module name="mysql" />
         <module name="redis" />
         <module name="reptile" />
@@ -28,6 +29,7 @@
       <module name="encrypt" target="1.8" />
       <module name="helloWorld" target="1.8" />
       <module name="javaNetworkProgramming" target="1.8" />
+      <module name="myPOI" target="1.8" />
       <module name="mysql" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="reptile" target="1.8" />
