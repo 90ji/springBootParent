@@ -85,5 +85,7 @@
         <module>javaNetworkProgramming</module>
         <module>reptile</module>
         <module>springBootTestWeb</module>
+        <module>aop</module>
+        <module>helloWorld</module>
     </modules>
 </project>
