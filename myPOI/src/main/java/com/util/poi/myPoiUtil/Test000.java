@@ -17,6 +17,8 @@ import java.util.Map;
  * Description:
  */
 public class Test000 {
+    public static final String FILENAME = "test.xlsx";
+
     @Test
     public void test01() throws IOException {
         //创建一个Excel对象
@@ -51,7 +53,7 @@ public class Test000 {
         cell2.setCellValue("18");
 
         //输出文件
-        FileOutputStream output = new FileOutputStream("test.xlsx");
+        FileOutputStream output = new FileOutputStream(FILENAME);
         wb.write(output);
         output.flush();
 
@@ -59,7 +61,7 @@ public class Test000 {
 
     @Test
     public void test02() throws Exception {
-        ReadExcelUtils utils = new ReadExcelUtils("test.xlsx");
+        ReadExcelUtils utils = new ReadExcelUtils(FILENAME);
 
         String[] strings = utils.readExcelTitle();
         for (String string : strings) {
@@ -78,7 +80,7 @@ public class Test000 {
 
     @Test
     public void test03() throws IOException {
-        FileInputStream fis = new FileInputStream("test.xlsx");
+        FileInputStream fis = new FileInputStream(FILENAME);
         //创建一个Excel对象
         XSSFWorkbook wb = new XSSFWorkbook(fis);
 
@@ -89,21 +91,24 @@ public class Test000 {
         fis.close();
 //        System.out.println(JSON.toJSONString(row));
         //输出文件
-        FileOutputStream output = new FileOutputStream("test.xlsx");
+        FileOutputStream output = new FileOutputStream(FILENAME);
         wb.write(output);
         output.flush();
         wb.close();
     }
+
     @Test
     public void test05() throws IOException {
-        addSportNumber(SheetEnum.NUMERIC,SportEnum.AAA,22);
+        addSportNumber(SheetEnum.NUMERIC, SportEnum.AAA, 22);
     }
 
     private void addSportNumber(SheetEnum sheetName, SportEnum projectName, Integer number) throws IOException {
-        FileInputStream fis = new FileInputStream("test.xlsx");
+        FileInputStream fis = new FileInputStream(FILENAME);
         //创建一个Excel对象
         XSSFWorkbook wb = new XSSFWorkbook(fis);
+        //获取sheet页
         XSSFSheet sheet = wb.getSheetAt(sheetName.getCode());
+        // TODO: 2018/1/26 获取sport对应的区域
         XSSFRow row = sheet.getRow(0);
         XSSFCell cell = row.getCell(0);
         System.out.println(cell.getStringCellValue());
@@ -116,44 +121,10 @@ public class Test000 {
         cell.setCellValue(22);
     }
 
-    @Test
-    public void test04() throws IOException {
-        //创建一个Excel对象
-        XSSFWorkbook wb = new XSSFWorkbook("test.xlsx");
+//    public static Cell getCellBySportName(String sportName){
+//
+//    }
 
-        //创建表单Sheet对象
-        XSSFSheet sheet = wb.createSheet("姓名");
-
-        //创建Row对象
-        XSSFRow row1 = sheet.createRow(0);
-        XSSFRow row2 = sheet.createRow(1);
-        XSSFRow row3 = sheet.createRow(2);
-
-        //创建Cell对象，并进行写操作
-
-        //第一行
-        XSSFCell cell1 = row1.createCell(0);
-        cell1.setCellValue("姓名");
-        XSSFCell cell2 = row1.createCell(1);
-        cell2.setCellValue("年龄");
-
-        //第二行
-        cell1 = row2.createCell(0);
-        cell1.setCellValue("张三");
-        cell2 = row2.createCell(1);
-        cell2.setCellValue("20");
-
-        //第三行
-        cell1 = row3.createCell(0);
-        cell1.setCellValue("李四");
-        cell2 = row3.createCell(1);
-        cell2.setCellValue("18");
-
-        //输出文件
-        FileOutputStream output = new FileOutputStream("test1.xlsx");
-        wb.write(output);
-        output.flush();
-    }
 
     private enum SheetEnum {
         _NONE(-1),
