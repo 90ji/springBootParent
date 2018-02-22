@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/email/email.iml" filepath="$PROJECT_DIR$/email/email.iml" />
       <module fileurl="file://$PROJECT_DIR$/encrypt/encrypt.iml" filepath="$PROJECT_DIR$/encrypt/encrypt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ffmpeg/ffmpeg.iml" filepath="$PROJECT_DIR$/ffmpeg/ffmpeg.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloWorld/helloWorld.iml" filepath="$PROJECT_DIR$/helloWorld/helloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaNetworkProgramming/javaNetworkProgramming.iml" filepath="$PROJECT_DIR$/javaNetworkProgramming/javaNetworkProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/myPOI/myPOI.iml" filepath="$PROJECT_DIR$/myPOI/myPOI.iml" />
@@ -17,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/springBootParent.iml" filepath="$PROJECT_DIR$/springBootParent.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" filepath="$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootTestWeb/springBootTestWeb.iml" filepath="$PROJECT_DIR$/springBootTestWeb/springBootTestWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studyConnectionPool/studyConnectionPool.iml" filepath="$PROJECT_DIR$/studyConnectionPool/studyConnectionPool.iml" />
     </modules>
   </component>
 </project>
