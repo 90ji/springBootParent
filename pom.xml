@@ -90,5 +90,6 @@
         <module>myPOI</module>
         <module>studyConnectionPool</module>
         <module>ffmpeg</module>
+        <module>JVMStudy</module>
     </modules>
 </project>
