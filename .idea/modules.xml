@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JVMStudy/JVMStudy.iml" filepath="$PROJECT_DIR$/JVMStudy/JVMStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aop/aop.iml" filepath="$PROJECT_DIR$/aop/aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/email/email.iml" filepath="$PROJECT_DIR$/email/email.iml" />
       <module fileurl="file://$PROJECT_DIR$/encrypt/encrypt.iml" filepath="$PROJECT_DIR$/encrypt/encrypt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ffmpeg/ffmpeg.iml" filepath="$PROJECT_DIR$/ffmpeg/ffmpeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloWorld/helloWorld.iml" filepath="$PROJECT_DIR$/helloWorld/helloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaNetworkProgramming/javaNetworkProgramming.iml" filepath="$PROJECT_DIR$/javaNetworkProgramming/javaNetworkProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myPOI/myPOI.iml" filepath="$PROJECT_DIR$/myPOI/myPOI.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysql/mysql.iml" filepath="$PROJECT_DIR$/mysql/mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/reptile/reptile.iml" filepath="$PROJECT_DIR$/reptile/reptile.iml" />
@@ -13,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootParent.iml" filepath="$PROJECT_DIR$/springBootParent.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" filepath="$PROJECT_DIR$/springBootStarterHello/springBootStarterHello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootTestWeb/springBootTestWeb.iml" filepath="$PROJECT_DIR$/springBootTestWeb/springBootTestWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studyConnectionPool/studyConnectionPool.iml" filepath="$PROJECT_DIR$/studyConnectionPool/studyConnectionPool.iml" />
     </modules>
   </component>
 </project>

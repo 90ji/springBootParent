@@ -20,7 +20,7 @@ public class HelloController {
         map.put("name", "Clark");
 
         System.out.println("============================================");
-        return "hello";
+        return "/hello";
     }
 
 }
