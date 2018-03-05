@@ -6,25 +6,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="aop" />
         <module name="cache" />
         <module name="concurrent" />
         <module name="email" />
         <module name="encrypt" />
+        <module name="ffmpeg" />
+        <module name="helloWorld" />
         <module name="javaNetworkProgramming" />
+        <module name="JVMStudy" />
+        <module name="myPOI" />
         <module name="mysql" />
         <module name="redis" />
         <module name="reptile" />
         <module name="scheduldTest" />
         <module name="security" />
         <module name="springBootStarterHello" />
+        <module name="springBootTestWeb" />
+        <module name="studyConnectionPool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aop" target="1.8" />
       <module name="cache" target="1.8" />
       <module name="concurrent" target="1.8" />
       <module name="email" target="1.8" />
       <module name="encrypt" target="1.8" />
+      <module name="ffmpeg" target="1.8" />
+      <module name="helloWorld" target="1.8" />
       <module name="javaNetworkProgramming" target="1.8" />
+      <module name="JVMStudy" target="1.8" />
+      <module name="myPOI" target="1.8" />
       <module name="mysql" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="reptile" target="1.8" />
@@ -32,6 +44,8 @@
       <module name="security" target="1.8" />
       <module name="springBootParent" target="1.8" />
       <module name="springBootStarterHello" target="1.8" />
+      <module name="springBootTestWeb" target="1.8" />
+      <module name="studyConnectionPool" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
