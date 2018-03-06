@@ -21,15 +21,15 @@ public class HttpClientUtil {
 
     private static final String USER_AGENT = "Mozilla/5.0";
 
-    private static final String GET_URL = "https://localhost:8443/index";
+    private static final String GET_URL = "http://web.ifzq.gtimg.cn/appstock/app/fqkline/get?_var=kline_dayqfq&param=sz000001,day,,,2,qfq";
 
-    private static final String POST_URL = "https://localhost:8443/index";
+    private static final String POST_URL = "http://web.ifzq.gtimg.cn/appstock/app/fqkline/get?_var=kline_dayqfq&param=sz000001,day,,,2,qfq";
 
 
     public static void main(String[] args) throws IOException {
         sendGET();
         System.out.println("GET DONE");
-        sendPOST();
+//        sendPOST();
         System.out.println("POST DONE");
     }
 

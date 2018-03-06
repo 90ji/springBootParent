@@ -316,7 +316,8 @@ public class HttpClientUtils {
     public static void main(String[] args) {
         try {
 //            String str= post("https://localhost:8443/index","name=12&page=34","application/x-www-form-urlencoded", "UTF-8", 10000, 10000);
-            String str = get("https://localhost:8443/index?name=12&page=34", "UTF-8");
+//            String str = get("https://localhost:8443/index?name=12&page=34", "UTF-8");
+            String str = get("http://web.ifzq.gtimg.cn/appstock/app/fqkline/get?_var=kline_dayqfq&param=sz000001,day,,,2,qfq", "UTF-8");
 //            Map<String,String> map = new HashMap<String,String>();
 //            map.put("name", "111");
 //            map.put("page", "222");
