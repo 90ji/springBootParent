@@ -21,7 +21,7 @@ public class Chapter06 {
     public void run()
             throws InterruptedException, IOException {
         Jedis conn = new Jedis("192.168.25.138");
-        conn.select(15);
+        conn.select(6);
 
         testAddUpdateContact(conn);
         testAddressBookAutocomplete(conn);
@@ -766,7 +766,7 @@ public class Chapter06 {
 
         public PollQueueThread() {
             this.conn = new Jedis("192.168.25.138");
-            this.conn.select(15);
+            this.conn.select(6);
         }
 
         public void quit() {
@@ -815,7 +815,7 @@ public class Chapter06 {
 
         public CopyLogsThread(File path, String channel, int count, long limit) {
             this.conn = new Jedis("192.168.25.138");
-            this.conn.select(15);
+            this.conn.select(6);
             this.path = path;
             this.channel = channel;
             this.count = count;

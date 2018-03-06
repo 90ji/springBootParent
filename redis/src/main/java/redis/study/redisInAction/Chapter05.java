@@ -38,7 +38,7 @@ public class Chapter05 {
     public void run()
             throws InterruptedException {
         Jedis conn = new Jedis("192.168.25.138");
-        conn.select(15);
+        conn.select(5);
 
         testLogRecent(conn);
         testLogCommon(conn);
@@ -217,7 +217,7 @@ public class Chapter05 {
         System.out.println("\n----- testConfig -----");
         System.out.println("Let's set a config and then get a connection from that config...");
         Map<String, Object> config = new HashMap<String, Object>();
-        config.put("db", 15);
+        config.put("db", 5);
         setConfig(conn, "redis", "test", config);
 
         Jedis conn2 = redisConnection("test");
@@ -241,10 +241,13 @@ public class Chapter05 {
         logCommon(conn, name, message, INFO, 5000);
     }
 
+    /**
+     * conn, "test", "message-" + count, INFO, 5000
+     */
     public void logCommon(
             Jedis conn, String name, String message, String severity, int timeout) {
-        String commonDest = "common:" + name + ':' + severity;
-        String startKey = commonDest + ":start";
+        String commonDest = "common:" + name + ':' + severity;//common:test:info
+        String startKey = commonDest + ":start";//common:test:message-n:info:start
         long end = System.currentTimeMillis() + timeout;
         while (System.currentTimeMillis() < end) {
             conn.watch(startKey);
@@ -253,8 +256,8 @@ public class Chapter05 {
 
             Transaction trans = conn.multi();
             if (existing != null && COLLATOR.compare(existing, hourStart) < 0) {
-                trans.rename(commonDest, commonDest + ":last");
-                trans.rename(startKey, commonDest + ":pstart");
+                trans.rename(commonDest, commonDest + ":last");//common:test:info:last
+                trans.rename(startKey, commonDest + ":pstart");//common:test:info:pstart
                 trans.set(startKey, hourStart);
             }
 
@@ -327,14 +330,8 @@ public class Chapter05 {
             trans.zadd(tkey1, value, "min");
             trans.zadd(tkey2, value, "max");
 
-            trans.zunionstore(
-                    destination,
-                    new ZParams().aggregate(ZParams.Aggregate.MIN),
-                    destination, tkey1);
-            trans.zunionstore(
-                    destination,
-                    new ZParams().aggregate(ZParams.Aggregate.MAX),
-                    destination, tkey2);
+            trans.zunionstore(destination, new ZParams().aggregate(ZParams.Aggregate.MIN), destination, tkey1);
+            trans.zunionstore(destination, new ZParams().aggregate(ZParams.Aggregate.MAX), destination, tkey2);
 
             trans.del(tkey1, tkey2);
             trans.zincrby(destination, 1, "count");
@@ -358,7 +355,7 @@ public class Chapter05 {
             stats.put(tuple.getElement(), tuple.getScore());
         }
         stats.put("average", stats.get("sum") / stats.get("count"));
-        double numerator = stats.get("sumsq") - Math.pow(stats.get("sum"), 2) / stats.get("count");
+        double numerator = stats.get("sumsq") - Math.pow(stats.get("sum"), 2) / stats.get("count");//标准差-sum的平方除以count
         double count = stats.get("count");
         stats.put("stddev", Math.pow(numerator / (count > 1 ? count - 1 : 1), .5));
         return stats;
@@ -420,7 +417,7 @@ public class Chapter05 {
         Jedis configConn = REDIS_CONNECTIONS.get("config");
         if (configConn == null) {
             configConn = new Jedis("192.168.25.138");
-            configConn.select(15);
+            configConn.select(5);
             REDIS_CONNECTIONS.put("config", configConn);
         }
 
@@ -539,7 +536,7 @@ public class Chapter05 {
 
         public CleanCountersThread(int sampleCount, long timeOffset) {
             this.conn = new Jedis("192.168.25.138");
-            this.conn.select(15);
+            this.conn.select(5);
             this.sampleCount = sampleCount;
             this.timeOffset = timeOffset;
         }

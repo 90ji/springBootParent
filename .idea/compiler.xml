@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aop" />
         <module name="cache" />
+        <module name="concurrent" />
         <module name="email" />
         <module name="encrypt" />
         <module name="ffmpeg" />
@@ -28,7 +29,7 @@
     <bytecodeTargetLevel>
       <module name="aop" target="1.8" />
       <module name="cache" target="1.8" />
-      <module name="dbcp2study" target="1.8" />
+      <module name="concurrent" target="1.8" />
       <module name="email" target="1.8" />
       <module name="encrypt" target="1.8" />
       <module name="ffmpeg" target="1.8" />

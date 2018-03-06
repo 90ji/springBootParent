@@ -91,5 +91,6 @@
         <module>studyConnectionPool</module>
         <module>ffmpeg</module>
         <module>JVMStudy</module>
+        <module>concurrent</module>
     </modules>
 </project>
