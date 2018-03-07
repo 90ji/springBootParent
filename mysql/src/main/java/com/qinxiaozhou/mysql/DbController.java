@@ -83,7 +83,7 @@ public class DbController {
     }
 
 //    @Scheduled(fixedRate = 3000)
-    @Scheduled(cron = "0/3 * * * * ?")
+    @Scheduled(cron = "0/5 * * * * ?")
     public void cronScheduled() {
 
         List<Map<String, Object>> dbType = getDbType();

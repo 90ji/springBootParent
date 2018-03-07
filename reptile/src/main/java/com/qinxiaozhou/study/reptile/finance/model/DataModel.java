@@ -103,7 +103,9 @@ public class DataModel implements Serializable {
     @Override
     public String toString() {
         return "DataModel{" +
-                "time='" + time + '\'' +
+                "id='" + id + '\'' +
+                ", stockCode='" + stockCode + '\'' +
+                ", time='" + time + '\'' +
                 ", opening='" + opening + '\'' +
                 ", close='" + close + '\'' +
                 ", max='" + max + '\'' +
